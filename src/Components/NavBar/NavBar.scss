@@ -1,0 +1,78 @@
+.navbar {
+  background-color: transparent !important;
+  box-shadow: none;
+  color: #000;
+  font-size: 5rem;
+  svg {
+    font-size: 2.5rem;
+  }
+  .toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: none;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    font-size: 2.5rem;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 1rem;
+
+    .nav-button {
+      color: white;
+      font-size: 1.5rem;
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+    }
+  }
+
+  .menu-icon {
+    display: none;
+    color: white;
+  }
+
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+
+    .menu-icon {
+      display: block;
+    }
+  }
+}
+
+.drawer {
+  width: 250px;
+  padding: 20px;
+  background-color: #4b2b1a;
+  height: 100vh;
+  font-size: 3rem;
+  .nav_list {
+    .list_item span {
+      color: white;
+      font-size: 2.5rem;
+    }
+  }
+  .close-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    svg {
+      font-size: 2.5rem;
+    }
+    color: #fff;
+  }
+
+  .MuiListItem-root {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+}
