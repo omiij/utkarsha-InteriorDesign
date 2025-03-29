@@ -12,7 +12,7 @@ import {
 } from "@mui/material";
 import { Menu as MenuIcon, Close as CloseIcon } from "@mui/icons-material";
 import { Link } from "react-router-dom";
-import "./Navbar.scss";
+import "./NavBar.scss";
 import LandslideIcon from "@mui/icons-material/Landslide";
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
