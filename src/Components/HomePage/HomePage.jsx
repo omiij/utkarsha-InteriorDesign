@@ -1,8 +1,12 @@
 import React from "react";
 import "./HomePage.scss";
+import interiorBg from "../../Images/1.png";
 function HomePage() {
   return (
-    <div className="home_page_container">
+    <div
+      className="home_page_container"
+      style={{ backgroundImage: `url(${interiorBg})` }}
+    >
       <div className="left">
         <h1>INTERIOR DESIGN</h1>
         <p>

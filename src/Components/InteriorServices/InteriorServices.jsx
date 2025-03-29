@@ -22,6 +22,7 @@ import {
   Brush, // Wall Painting
   GridView, // Flooring
 } from "@mui/icons-material";
+import interiorBg from "../../Images/1.png";
 
 import styles from "./InteriorServices.module.scss";
 
@@ -87,7 +88,10 @@ export default function InteriorServices() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className={styles.interiorServices}>
+    <div
+      className={styles.interiorServices}
+      style={{ backgroundImage: `url(${interiorBg})` }}
+    >
       {/* Hero Section */}
       <div className={styles.hero}>
         <Typography variant="h1">Interior Design Services</Typography>

@@ -10,10 +10,10 @@
   height: fit-content;
 
   .hero {
-    background: url("/interior-bg.jpg") center/cover no-repeat;
     color: white;
     padding: 4rem 2rem;
     width: 100%;
+
     h1 {
       font-size: clamp(2rem, 8vw, 4rem);
       margin: 0;
