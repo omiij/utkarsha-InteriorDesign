@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://omiij.github.io/utkarsha-InteriorDesign/",
+  "homepage": "https://omiij.github.io/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
