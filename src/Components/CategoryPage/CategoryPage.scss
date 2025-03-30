@@ -1,0 +1,12 @@
+.category_container {
+  background-color: var(--hgf-g-yellow-natural-80);
+  height: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 6rem;
+  .category {
+    align-content: flex-start;
+  }
+}

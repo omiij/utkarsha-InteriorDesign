@@ -1,0 +1,21 @@
+.category_container_main {
+  background-color: var(--hgf-g-yellow-natural-80);
+  height: 100%;
+  .heading_add {
+    height: 78vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 3rem;
+  }
+  .back_button {
+    margin-top: 10rem;
+    font-size: 3rem;
+    color: black;
+    svg {
+      font-size: 5rem;
+      color: black;
+    }
+  }
+}

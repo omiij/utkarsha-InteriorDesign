@@ -13,7 +13,7 @@ import {
 import { Menu as MenuIcon, Close as CloseIcon } from "@mui/icons-material";
 import { Link } from "react-router-dom";
 import "./NavBar.scss";
-import LandslideIcon from "@mui/icons-material/Landslide";
+import AddBusinessIcon from "@mui/icons-material/AddBusiness";
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -22,10 +22,10 @@ const Navbar = () => {
   };
 
   const navItems = [
-    { label: "Home", path: "/" },
-    { label: "About", path: "/about" },
-    { label: "Services", path: "/services" },
-    { label: "Contact", path: "/contact" },
+    { label: "Shop", path: "/" },
+    { label: "Cart", path: "/cart/home" },
+    // { label: "Services", path: "/services" },
+    // { label: "Contact", path: "/contact" },
   ];
 
   return (
@@ -34,7 +34,7 @@ const Navbar = () => {
       <AppBar style={{ boxShadow: "none" }} className="navbar">
         <Toolbar className="toolbar">
           <Typography variant="h6" className="logo">
-            <LandslideIcon /> Home Dynamics
+            <AddBusinessIcon /> THE SHOP-SPHERE
           </Typography>
           <div className="nav-links">
             {navItems.map((item) => (

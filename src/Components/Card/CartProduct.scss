@@ -1,0 +1,67 @@
+.cart_products_caontainer {
+  width: 100%;
+  height: 100vh;
+  height: fit-content;
+  // background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  color: white;
+  text-align: center;
+  padding-top: 5rem;
+  .left {
+    margin: 3rem;
+    flex: 1;
+    .action_div {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 1rem;
+      button {
+        font-size: 2rem;
+      }
+      svg {
+        font-size: 3rem;
+      }
+    }
+    h1 {
+      font-size: 3rem;
+      line-height: 1;
+      text-align: left;
+      color: var(--hgf-g-orange-vibrant-10);
+    }
+
+    p {
+      font-size: 2rem;
+      text-align: left;
+      color: #4b2b1abd;
+
+      @media (max-width: 768px) {
+        font-size: 1.8rem;
+      }
+
+      @media (max-width: 480px) {
+        font-size: 1.6rem;
+      }
+    }
+  }
+  .right {
+    flex: 1;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    .collage-img {
+      width: 40rem;
+      height: 40rem;
+      border-radius: 1rem;
+      box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+      @media (max-width: 768px) {
+        width: 60rem;
+        height: 40rem;
+      }
+    }
+  }
+}

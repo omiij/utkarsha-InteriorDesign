@@ -3,9 +3,9 @@ import "./App.scss";
 import Navbar from "./Components/NavBar/NavBar";
 import { Route, Routes } from "react-router-dom";
 import HomePage from "./Components/HomePage/HomePage";
-import AboutUs from "./Components/Overview/AboutUs";
-import ContactForm from "./Components/ContactUs/ContactForm";
 import InteriorServices from "./Components/InteriorServices/InteriorServices";
+import CategoryPage from "./Components/CategoryPage/CategoryPage";
+import ProductCart from "./Components/Cart/ProductCart";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -16,9 +16,9 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/about" element={<AboutUs />} />
+          <Route path="/category/:categoryName" element={<CategoryPage />} />
+          <Route path="/cart/:categoryName" element={<ProductCart />} />
           <Route path="/services" element={<InteriorServices />} />
-          <Route path="/contact" element={<ContactForm />} />
         </Routes>
       </div>
     </>
